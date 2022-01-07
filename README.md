@@ -9,15 +9,19 @@ Sentences categorized as positive or negative are included in the dataset, and t
 The following procedures were used to conduct the entire experiment: 
 
 1. Take care of the data sets
+  
   For the appropriate dataset, add a new column with 1 as the positive label and a new column with 0 as the negative label. Then, to conduct a random experiment, concatenate them as a single dataset and randomly shuffle them.
   
 2. Divide your data into training and test sets.
+  
   Use sklearn's built-in function to randomly split the entire dataset into a training set and a test set, with the test set accounting for 15% of the total.
 
 3. Use a variety of text feature extraction approaches.
+  
   Implement many types of text processing methods and convert them to vectors using the count vectorizer from sklearn.
 
 4. Experiments with cross-validation
+  
   After processing the texts, the average MSE and accuracy score on both the training and validation sets were calculated using five cross-validations. Finally, the model was trained with the entire training set to predict the test set, and the MSE and accuracy scores on the test set were obtained.
 
 ## Results
